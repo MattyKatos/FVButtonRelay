@@ -1,0 +1,23 @@
+{
+  "name": "fvbuttonrelay",
+  "version": "0.1.0",
+  "description": "FVButtonRelay: LAN button press relay that logs incoming params, redirects to Filevine project activity, and emits SSE feeds",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "filevine",
+    "redirect",
+    "express",
+    "link-catcher",
+    "sse",
+    "events"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

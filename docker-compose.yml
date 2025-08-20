@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  fvbuttonrelay:
+    build: .
+    container_name: fvbuttonrelay
+    environment:
+      - NODE_ENV=production
+      - PORT=4020
+      - FEEDS_PORT=4021
+    ports:
+      - "4020:4020"
+      - "4021:4021"
+    restart: unless-stopped
+    # If you want live-reload during development, uncomment the volumes section and install nodemon
+    # volumes:
+    #   - .:/app
